@@ -12,7 +12,7 @@ import (
 	"github.com/go-xorm/core"
 )
 
-// Interface defines the interface which Engine, EngineGroup and Session will implementate.
+// Interface defines the interface which engine, EngineGroup and Session will implementate.
 type Interface interface {
 	AllCols() *Session
 	Alias(alias string) *Session
@@ -66,7 +66,7 @@ type Interface interface {
 	Where(interface{}, ...interface{}) *Session
 }
 
-// EngineInterface defines the interface which Engine, EngineGroup will implementate.
+// EngineInterface defines the interface which engine, EngineGroup will implementate.
 type EngineInterface interface {
 	Interface
 

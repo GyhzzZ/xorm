@@ -12,7 +12,7 @@ Make sure you have installed Go 1.6+ and then:
 
     go get github.com/cochainio/xorm
 
-Create Engine
+Create engine
 
 Firstly, we should new an engine for a database
 

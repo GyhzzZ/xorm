@@ -23,7 +23,7 @@ import (
 	"github.com/go-xorm/core"
 )
 
-// Engine is the major struct of xorm, it means a database manager.
+// engine is the major struct of xorm, it means a database manager.
 // Commonly, an application only need one engine
 type Engine struct {
 	db      *core.DB
@@ -171,7 +171,7 @@ func (engine *Engine) SupportInsertMany() bool {
 	return engine.dialect.SupportInsertMany()
 }
 
-// QuoteStr Engine's database use which character as quote.
+// QuoteStr engine's database use which character as quote.
 // mysql, sqlite use ` and postgres use "
 func (engine *Engine) QuoteStr() string {
 	return engine.dialect.QuoteStr()
